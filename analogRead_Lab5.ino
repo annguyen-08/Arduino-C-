@@ -1,4 +1,4 @@
-// analogRead lab #5: Blink the LED at the specific brightness corresponding to the potentiometer value with the blinking speed aslo corresponding to the potentiometer value
+// analogRead lab #5: Blink the LED at the specific brightness corresponding to the potentiometer value with the blinking speed also corresponding to the potentiometer value
 
 int led = 10;
 const int pot = A0;
