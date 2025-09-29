@@ -42,7 +42,13 @@ void loop() {
   // Prints the distance on the Serial Monitor
   Serial.print("Distance: ");
   Serial.println(distance);
-  
+
+  if (distance > 5){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
   // --------------------------------------------------------
   // ADD Your Code Here - Detect a specific distance... like distance > 5 cm
 
