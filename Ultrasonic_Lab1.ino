@@ -45,12 +45,7 @@ void loop() {
   
   // --------------------------------------------------------
   // ADD Your Code Here - Detect a specific distance... like distance > 5 cm
-  if (distance > 5){
-    digitalWrite(led, HIGH);
-  }
-  else{
-    digitalWrite(led, LOW);
-  }
+
   
   // --------------------------------------------------------
 }
