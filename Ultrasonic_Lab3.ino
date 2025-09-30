@@ -21,7 +21,7 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034 / 2;
 
-  while (distance > 30){
+  while (distance < 30){
     Serial.println("Object detected and present");
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
@@ -32,12 +32,12 @@ void loop() {
 
     duration = pulseIn(echoPin, HIGH);
     distance = duration * 0.034 / 2;
-    if (distance <= 30){
+    if (distance >= 30){
       Serial.println("Detected object is gone");
       break;
     }
   }
-  while (distance <= 30){
+  while (distance >= 30){
     Serial.println("Waiting To Detect An Object");
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
