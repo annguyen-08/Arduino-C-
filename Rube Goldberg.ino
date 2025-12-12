@@ -87,11 +87,11 @@ void loop() {
   if (distance2 <= 5)
   {
     tone (buzzer, 131, 100);
-    //delay (100);
+    delay (100);
     tone (buzzer, 147, 100);
-    //delay (100);
+    delay (100);
     tone (buzzer, 165, 100);
-    //delay (100);
+    delay (100);
   }
   else 
   {
