@@ -58,17 +58,21 @@ void loop() {
   Serial.println (distance1);
 
   //Code for the DC motor
-  if (distance1 <= 5)
+  int n = 1;
+
+  if (distance1 <= 5 && n == 1)
   {
-    analogWrite (motor1, 100);
+    analogWrite (motor1, 65);
     analogWrite (motor2, 0);
+    n = 0;
   }
   else
   {
     analogWrite (motor1, 0);
     analogWrite (motor2, 0);
+    n = 1;
   }
-  
+    
   //Code for the second sensor
   digitalWrite(trig2, LOW);
   delayMicroseconds(2);
