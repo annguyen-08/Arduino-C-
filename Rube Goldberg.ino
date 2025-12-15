@@ -60,13 +60,13 @@ void loop() {
   //Code for the DC motor
   if (distance1 <= 5)
   {
-    digitalWrite (motor1, HIGH);
-    digitalWrite (motor2, LOW);
+    analogWrite (motor1, 100);
+    analogWrite (motor2, 0);
   }
   else
   {
-    digitalWrite (motor1, LOW);
-    digitalWrite (motor2, LOW);
+    analogWrite (motor1, 0);
+    analogWrite (motor2, 0);
   }
   
   //Code for the second sensor
